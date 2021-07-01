@@ -1,4 +1,4 @@
-
+ 
 <html>
   <head>
     <title>Emotion To Emoji</title>
@@ -40,23 +40,27 @@
       </p>
       <div class="col-md-4 col-sm-12 col-xs-12">
         <label>Webcam view -</label>
-      <div id="camera">
+      <div id="camera"></div>
+        <br><br>
         <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
+        </div>
 
         <div class="col-md-4 col-sm-12 col-xs-12">
           <label>Prediction1 -</label> 
-          <p class="emoption_name" id="result_emotion_name"></p>
+          <p class="emotion_name" id="result_emotion_name"></p>
           <p class="emoji" id="update_emoji"></p>
-          
-          <div class="col-md-4 col-sm-12 col-xs-12">
+    
             <label>Prediction2 -</label> 
-            <p class="emoption_name" id="result_emotion_name2"></p>
+            <p class="emotion_name" id="result_emotion_name2"></p>
             <p class="emoji" id="update_emoji2"></p>
             </div>
-            </div>
+          
 
     <div class="col-md-4 col-sm-12 col-xs-12">
      <label>Snapshot -</label>
+     <div id="result"></div>
+     <br><br>
+     <button onclick="check();" class="btn btn-success">Predict Emotion</button>
     </div>
 
     </center>
